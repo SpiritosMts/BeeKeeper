@@ -47,7 +47,7 @@ class _SelectedRqViewState extends State<SelectedRqView> with TickerProviderStat
               child: CircleAvatar(
                 radius: 80.0,
                 backgroundColor: blueColHex,
-                child: Image.asset('assets/images/ran.png'),
+                child: Image.asset('assets/images/ran.png',color: yellowCol,),
                 // foregroundImage: ( gc.st.logo! != '' && showMarkerLogo)? NetworkImage( gc.st.logo!):jobTypeIcon(gc.st.jobType!),
               ),
             ),
