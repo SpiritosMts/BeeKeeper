@@ -8,7 +8,7 @@ import 'package:intl/intl.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import 'firebase/fireBaseAuth.dart';
-const CameraPosition susahPos = CameraPosition(target: LatLng( 51.260197, 4.402771), zoom: 10.0);
+const CameraPosition susahPos = CameraPosition(target: LatLng( 35.789, 10.5), zoom: 10.0);
 var commaFormatter = NumberFormat('#,###,###');
 
 int nameMaxLength = 30;

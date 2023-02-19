@@ -298,6 +298,43 @@ class _SelectedRqViewState extends State<SelectedRqView> with TickerProviderStat
                               height: 15,
                             ),
 
+                            ///email
+                            Row(
+                              children: <Widget>[
+                                const SizedBox(
+                                  width: 20,
+                                ),
+                                const Icon(
+                                  Icons.alternate_email,
+                                ),
+                                const SizedBox(
+                                  width: 20,
+                                ),
+                                Flexible(
+                                  child: Container(
+                                    //padding: const EdgeInsets.only(right:25.0),
+                                    width: MediaQuery.of(context).size.width * 0.6,
+                                    child: RichText(
+                                      locale: Locale(currLang!),
+                                      textAlign: TextAlign.start,
+                                      softWrap: true,
+                                      text: TextSpan(children: [
+                                        TextSpan(
+                                          text: '${rq.email}',
+                                          style: const TextStyle(
+                                            height: 1.5,
+                                          ),
+                                        ),
+                                      ]),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 15,
+                            ),
+
 
                             ///full_adress
                             Row(
@@ -322,6 +359,42 @@ class _SelectedRqViewState extends State<SelectedRqView> with TickerProviderStat
                                       text: TextSpan(children: [
                                         TextSpan(
                                           text: '${rq.address}',
+                                          style: const TextStyle(
+                                            height: 1.5,
+                                          ),
+                                        ),
+                                      ]),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            ///type
+                            Row(
+                              children: <Widget>[
+                                const SizedBox(
+                                  width: 20,
+                                ),
+                                const Icon(
+                                  Icons.merge_type,
+                                ),
+                                const SizedBox(
+                                  width: 20,
+                                ),
+                                Flexible(
+                                  child: Container(
+                                    //padding: const EdgeInsets.only(right:25.0),
+                                    width: MediaQuery.of(context).size.width * 0.6,
+                                    child: RichText(
+                                      locale: Locale(currLang!),
+                                      textAlign: TextAlign.start,
+                                      softWrap: true,
+                                      text: TextSpan(children: [
+                                        TextSpan(
+                                          text: '${rq.type}'.tr,
                                           style: const TextStyle(
                                             height: 1.5,
                                           ),
@@ -417,7 +490,7 @@ class _SelectedRqViewState extends State<SelectedRqView> with TickerProviderStat
                 ),
 
                 ///approve btn
-                (rq.accepted == 'notYet')
+                (authCtr.cUser.isAdmin)
                     ? Positioned(
                   height: 40,
                   width: 110,

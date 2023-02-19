@@ -27,6 +27,7 @@ class Requestb {
   Requestb({
     this.id,
     this.name,
+    this.email,
     this.type,
     this.phone,
     this.images,
@@ -44,9 +45,11 @@ Requestb convertDocToRequestModel(doc) {
   GeoPoint pos = doc.get('coords');
 
   Requestb request = Requestb(
+
     id: doc.get('id'),
     name: doc.get('name'),
     desc: doc.get('desc'),
+    email: doc.get('email'),
     address: doc.get('address'),
     longitude: pos.longitude,
     latitude: pos.latitude,
