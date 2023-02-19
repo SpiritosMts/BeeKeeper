@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918242392150",
+    "project_id": "beekeeper-40560",
+    "storage_bucket": "beekeeper-40560.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918242392150:android:545a43a4e47371a9dba3f7",
+        "android_client_info": {
+          "package_name": "com.example.beekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918242392150-aarohob1nloi374c040j9kcllohckdql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCALcdOksD2sgs9AeKTliD7v0y_1LDzoVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918242392150-aarohob1nloi374c040j9kcllohckdql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

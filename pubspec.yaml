@@ -1,0 +1,79 @@
+name: beekeeper
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cloud_firestore: any
+  firebase_core: ^2.1.1
+  #cloud_functions: any
+  firebase_auth: ^4.1.0
+  firebase_storage: ^11.0.3
+  google_sign_in: any
+
+  get: ^4.6.5
+  persistent_bottom_nav_bar: ^5.0.2
+  awesome_dialog: ^3.0.2
+  url_launcher: ^6.0.20
+  image_picker: ^0.8.4+8
+  google_fonts: any
+  geocoding: any
+  flutter_native_splash: any
+  flutter_launcher_icons: ^0.11.0
+  http: 0.13.5
+  shared_preferences: ^2.0.15
+  google_maps_flutter: ^2.1.8
+  geolocator: ^9.0.2 # get user pos (gps)
+  ionicons: any #icons
+  responsive_sizer: ^3.1.0
+  loading_indicator: ^3.1.0
+  awesome_notifications: any
+  shimmer: ^2.0.0
+  fancy_shimmer_image: ^2.0.2
+  fluttertoast: ^8.1.2
+  custom_map_markers: ^0.0.1
+  pinch_zoom: ^1.0.0
+  flutter_typeahead: ^4.1.0
+  animated_text_kit: ^4.2.2
+  auto_size_text: ^3.0.0
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.11.0
+
+module:
+  androidX: true # Add this line.
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_native_splash:
+  color: "#0a1227"
+  image: assets/images/logo.png
+  fullscreen: true
+  andoid: true
+  ios: true
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
