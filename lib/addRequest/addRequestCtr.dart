@@ -79,7 +79,8 @@ class AddRequestCtr extends GetxController {
         //
         'type':type,
         //
-        'accepted': 'notYet',
+       /// 'accepted': 'notYet',
+        'accepted': 'yes',
         //
         'time':todayToString(withTime: true)
         //
