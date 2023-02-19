@@ -7,6 +7,7 @@ import 'package:beekeeper/myPacks/mapVoids.dart';
 import 'package:beekeeper/myPacks/myConstants.dart';
 import 'package:beekeeper/myPacks/myTheme/myTheme.dart';
 import 'package:beekeeper/myPacks/myVoids.dart';
+import 'package:beekeeper/news/newsView.dart';
 import 'package:beekeeper/notifications/notificationCtr.dart';
 import 'package:beekeeper/shop/shopView.dart';
 import 'package:beekeeper/transfer/transfert.dart';
@@ -209,7 +210,7 @@ class _HomeState extends State<Home> {
                   title: Text('News'.tr),
                   onTap: () {
                     Get.back();
-                    //Get.to(() => NewsView());
+                    Get.to(() => NewsView());
                   },
                 ),
                 divider(),
